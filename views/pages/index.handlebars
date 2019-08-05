@@ -1,0 +1,28 @@
+{{#if Success}}
+<div class="alert alert-info">
+    {{Success}}
+</div>
+{{/if}}
+
+
+
+
+
+<div class="card">
+    <h5 class="card-header">Registered User</h5>
+    <div class="card-body">
+        <ul class="list-group">
+            {{#each users}}
+            <li class="list-group-item">{{UserName}}</li>
+            {{else}}
+            <div class="alert alert-info">
+                There is no registered User
+            </div>
+            {{/each}}
+           
+        </ul>
+    </div>
+</div>
+{{#if user}}
+<h4>Logged In as:{{user.UserName}}</h4>
+{{/if}}

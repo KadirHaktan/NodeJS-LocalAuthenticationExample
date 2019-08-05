@@ -1,0 +1,18 @@
+
+<div class="card" style="margin-top: 15px;">
+    <h5 class="card-header">Login To Your Acount</h5>
+    <div class="card-body">
+        <form action="/login" method="POST">
+           <div class="form-group">
+               <label for="UserName">UserName</label>
+               <input type="text" name="UserName" id="UserName" class="form-control" value={{UserName}}>
+           </div>
+              <div class="form-group">
+               <label for="Password">Password</label>
+               <input type="password" name="Password" id="Password" class="form-control" value="{{UserName}}">
+           </div>
+           <button type="submit" class="btn btn-danger btn-block">Login</button>
+
+        </form>
+    </div>
+</div>
